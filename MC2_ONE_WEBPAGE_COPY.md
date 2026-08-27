@@ -1,4 +1,4 @@
-The Legend of MC² One 
+The Legend of MC² One  
 
 They tried to silence his voice. They only made it louder.
 
