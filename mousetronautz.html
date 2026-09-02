@@ -1,1 +1,143 @@
+ <!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mousetronautz — Issue #1</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      background: #080808;
+
+      color: white;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .top-bar {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+      padding: 14px;
+
+      text-align: center;
+
+      background: rgba(8, 8, 8, 0.95);
+
+      border-bottom: 1px solid #333;
+
+    }
+
+    .return-button {
+
+      display: inline-block;
+
+      padding: 10px 18px;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      border: 2px solid white;
+
+      border-radius: 6px;
+
+    }
+
+    .comic-reader {
+
+      width: 100%;
+
+      max-width: 1100px;
+
+      margin: 0 auto;
+
+      padding: 20px 12px 50px;
+
+    }
+
+    .comic-page {
+
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+
+      margin: 0 auto 24px;
+
+      background: white;
+
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+
+    }
+
+    @media (max-width: 600px) {
+
+      .comic-reader {
+
+        padding: 10px 0 35px;
+
+      }
+
+      .comic-page {
+
+        margin-bottom: 12px;
+
+        box-shadow: none;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+
+    <a class="return-button" href="index.html">Return to Robot Afro Press</a>
+
+  </div>
+
+  <main class="comic-reader">
+
+    <img class="comic-page" src="cover.jpg" alt="Mousetronautz Issue 1 cover">
+
+    <img class="comic-page" src="page-01.jpg" alt="Mousetronautz Issue 1 page 1">
+
+    <img class="comic-page" src="page-02.png" alt="Mousetronautz Issue 1 page 2">
+
+    <img class="comic-page" src="page-03.png" alt="Mousetronautz Issue 1 page 3">
+
+    <img class="comic-page" src="page-04.png" alt="Mousetronautz Issue 1 page 4">
+
+  </main>
+
+</body>
+
+</html>
