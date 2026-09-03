@@ -8,19 +8,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ikenna: Son of Zeus | Robot Afro Press</title> 
+  <title>Ikenna: Son of Zeus | Robot Afro Press</title>
 
   <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
 
     body {
 
       margin: 0;
 
-      padding: 0;
+      background: #050505;
 
-      background-color: #080808;
-
-      color: white;
+      color: #ffffff;
 
       font-family: Arial, Helvetica, sans-serif;
 
@@ -28,137 +32,213 @@
 
     }
 
-    main {
+    .page {
 
-      width: 90%;
+      width: 100%;
 
-      max-width: 850px;
+      max-width: 950px;
 
       margin: 0 auto;
 
-      padding: 50px 0;
+      padding: 30px 20px 60px;
+
+    }
+
+    .hero-image {
+
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+
+      margin: 0 auto 35px;
+
+      border-radius: 10px;
 
     }
 
     h1 {
 
-      color: #ff3030;
+      margin: 0;
+
+      color: #ffd11a;
+
+      font-size: 42px;
+
+      line-height: 1.15;
 
       text-align: center;
 
-      font-size: 2.6rem;
-
-      margin-bottom: 10px;
+      text-transform: uppercase;
 
     }
 
-    .tagline {
+    h2 {
+
+      margin: 18px 0 35px;
+
+      color: #8fdcff;
+
+      font-size: 24px;
+
+      line-height: 1.4;
 
       text-align: center;
-
-      font-size: 1.25rem;
-
-      font-style: italic;
-
-      margin-bottom: 20px;
 
     }
 
-    .project-status {
+    .story {
 
-      width: fit-content;
+      max-width: 760px;
 
-      margin: 0 auto 40px;
+      margin: 0 auto;
 
-      padding: 10px 18px;
+      font-size: 19px;
 
-      border: 1px solid #ff3030;
+    }
 
-      border-radius: 6px;
+    .story p {
 
-      color: #ffffff;
+      margin: 0 0 24px;
 
-      text-align: center;
+    }
+
+    .closing-line {
+
+      color: #ffd11a;
+
+      font-size: 23px;
 
       font-weight: bold;
 
-    }
-
-    p {
-
-      font-size: 1.1rem;
-
-      margin-bottom: 22px;
-
-    }
-
-    .final-line {
-
-      color: #ff3030;
-
       text-align: center;
 
-      font-size: 1.3rem;
+    }
 
-      font-weight: bold;
+    .second-image {
 
-      margin-top: 35px;
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+
+      margin: 40px auto;
+
+      border-radius: 10px;
 
     }
 
-    .back-link {
+    .read-button {
 
       display: block;
 
       width: fit-content;
 
-      margin: 45px auto 0;
+      margin: 35px auto;
 
-      padding: 12px 24px;
+      padding: 16px 32px;
 
-      background-color: #ff3030;
+      background: #ffd11a;
 
-      color: white;
+      color: #000000;
 
-      text-decoration: none;
+      border-radius: 8px;
+
+      font-size: 19px;
 
       font-weight: bold;
 
-      border-radius: 6px;
+      text-align: center;
+
+      text-decoration: none;
 
     }
 
-    .back-link:hover {
+    .read-button:hover {
 
-      background-color: #cc2020;
+      background: #ffffff;
+
+    }
+
+    .development-status {
+
+      max-width: 760px;
+
+      margin: 45px auto 0;
+
+      padding: 24px;
+
+      background: #111111;
+
+      border-left: 5px solid #ffd11a;
+
+      font-size: 18px;
+
+      text-align: center;
+
+    }
+
+    .return-button {
+
+      display: block;
+
+      width: fit-content;
+
+      margin: 40px auto 0;
+
+      padding: 13px 25px;
+
+      color: #ffffff;
+
+      border: 2px solid #ffffff;
+
+      border-radius: 7px;
+
+      text-align: center;
+
+      text-decoration: none;
+
+    }
+
+    .return-button:hover {
+
+      background: #ffffff;
+
+      color: #000000;
 
     }
 
     @media (max-width: 600px) {
 
-      main {
+      .page {
 
-        width: 88%;
-
-        padding: 30px 0;
+        padding: 18px 14px 45px;
 
       }
 
       h1 {
 
-        font-size: 2rem;
+        font-size: 32px;
 
       }
 
-      .tagline {
+      h2 {
 
-        font-size: 1.1rem;
+        font-size: 20px;
 
       }
 
-      p {
+      .story {
 
-        font-size: 1rem;
+        font-size: 17px;
+
+      }
+
+      .closing-line {
+
+        font-size: 20px;
 
       }
 
@@ -170,66 +250,67 @@
 
 <body>
 
-  <main>
+  <main class="page">
 
-    <h1>IKENNA: SON OF ZEUS</h1>
+    <img
 
-    <p class="tagline">
+      class="hero-image"
 
-      Two worlds. Two legacies. One young hero caught between them.
+      src="Ikenna: Warrior of the storm.png"
 
-    </p>
+      alt="Ikenna, Son of Zeus, standing amid a powerful lightning storm"
 
-    <div class="project-status">
+    >
 
-      Six completed comic-book scripts
+    <h1>Ikenna: Son of Zeus</h1>
 
-    </div>
+    <h2>Two worlds. Two legacies. One young hero caught between them.</h2>
 
-    <p>
+    <section class="story">
 
-      Eric was an ordinary teenager trying to find his way forward after life knocked him down.
+      <p>
 
-    </p>
+        Eric was an ordinary teenager with his entire future ahead of him—until a devastating accident changed his life forever.
 
-    <p>
+      </p>
 
-      Then the impossible happened.
+      <p>
 
-    </p>
+        Then the impossible happened.
 
-    <p>
+      </p>
 
-      A mysterious encounter awakens extraordinary abilities within him and connects Eric to a hidden world of gods, monsters, ancient technology, and secrets stretching far beyond Earth.
+      <p>
 
-    </p>
+        A mysterious encounter awakens extraordinary abilities within him and connects Eric to a hidden world of gods, monsters, ancient technology, and secrets stretching far beyond Earth.
 
-    <p>
+      </p>
 
-      Now calling himself Ikenna, Eric must learn to control powers he barely understands while searching for the truth about where they came from—and what his awakening may have set into motion.
+      <p>
 
-    </p>
+        Now calling himself Ikenna, Eric must learn to control powers he barely understands while searching for the truth about where they came from—and what his awakening may have set into motion.
 
-    <p>
+      </p>
 
-      Fortunately, he won’t face it alone. With his best friend M.K. at his side and the unpredictable Asterope guiding him, Ikenna is about to discover that the legends humanity calls mythology are very real.
+      <p>
 
-    </p>
+        Fortunately, he won’t face it alone. With his best friend M.K. at his side and the unpredictable Asterope guiding him, Ikenna is about to discover that the legends humanity calls mythology are very real.
 
-    <p>
+      </p>
 
-      And they know his name.
+      <p>
 
-    </p>
+        And they know his name.
 
-    <p class="final-line">
+      </p>
 
-      The age of heroes never ended. It was waiting for Ikenna.
+      <p class="closing-line">
 
-    </p>
+        The age of heroes never ended. It was waiting for Ikenna.
 
-    <a class="back-link" href="index.html">Return to Robot Afro Press</a>
+      </p>
 
+    
   </main>
 
 </body>
