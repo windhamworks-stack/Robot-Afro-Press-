@@ -1,1 +1,495 @@
+ <!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vlad from Cellblock D | Robot Afro Press</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      background:
+
+        radial-gradient(circle at top, #3b0808 0%, #170303 32%, #050505 72%);
+
+      color: #f4eee6;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      line-height: 1.7;
+
+    }
+
+    .page {
+
+      width: 100%;
+
+      min-height: 100vh;
+
+      padding: 55px 20px;
+
+    }
+
+    .container {
+
+      width: 100%;
+
+      max-width: 900px;
+
+      margin: 0 auto;
+
+    }
+
+    .hero {
+
+      padding: 65px 28px;
+
+      border: 2px solid #8e1515;
+
+      background: rgba(0, 0, 0, 0.72);
+
+      box-shadow: 0 0 35px rgba(150, 0, 0, 0.35);
+
+      text-align: center;
+
+    }
+
+    h1 {
+
+      margin: 0;
+
+      color: #d7b56d;
+
+      font-size: clamp(2.6rem, 8vw, 5.3rem);
+
+      line-height: 1;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      text-shadow: 3px 3px 0 #620000;
+
+    }
+
+    .tagline {
+
+      max-width: 700px;
+
+      margin: 28px auto 0;
+
+      color: #ffffff;
+
+      font-size: clamp(1.1rem, 3vw, 1.55rem);
+
+      font-style: italic;
+
+    }
+
+    .story-section {
+
+      margin-top: 35px;
+
+      padding: 42px 38px;
+
+      border-left: 4px solid #8e1515;
+
+      background: rgba(12, 12, 12, 0.92);
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+    }
+
+    h2 {
+
+      margin: 0 0 26px;
+
+      color: #d7b56d;
+
+      font-size: clamp(1.55rem, 5vw, 2.3rem);
+
+      letter-spacing: 2px;
+
+      text-align: center;
+
+      text-transform: uppercase;
+
+    }
+
+    p {
+
+      margin: 0 0 20px;
+
+      font-size: 1.12rem;
+
+    }
+
+    .power-lines {
+
+      margin: 30px 0;
+
+      color: #ffffff;
+
+      font-size: 1.25rem;
+
+      font-weight: bold;
+
+      line-height: 1.9;
+
+      text-align: center;
+
+    }
+
+    .turning-point {
+
+      margin: 34px 0;
+
+      padding: 25px 15px;
+
+      border-top: 1px solid #701010;
+
+      border-bottom: 1px solid #701010;
+
+      color: #d7b56d;
+
+      font-size: 1.65rem;
+
+      font-weight: bold;
+
+      text-align: center;
+
+    }
+
+    .big-ren {
+
+      margin: 32px 0 5px;
+
+      color: #ffffff;
+
+      font-size: 1.8rem;
+
+      font-weight: bold;
+
+      text-align: center;
+
+    }
+
+    .closing {
+
+      margin-top: 35px;
+
+      padding: 45px 38px;
+
+      border: 2px solid #8e1515;
+
+      background: linear-gradient(
+
+        145deg,
+
+        rgba(80, 5, 5, 0.92),
+
+        rgba(5, 5, 5, 0.96)
+
+      );
+
+      text-align: center;
+
+    }
+
+    .closing p {
+
+      font-size: 1.2rem;
+
+    }
+
+    .final-line {
+
+      margin: 28px 0 0;
+
+      color: #d7b56d;
+
+      font-size: clamp(1.7rem, 5vw, 2.6rem);
+
+      font-weight: bold;
+
+      line-height: 1.25;
+
+      text-transform: uppercase;
+
+    }
+
+    .return-button {
+
+      display: block;
+
+      width: fit-content;
+
+      margin: 42px auto 0;
+
+      padding: 15px 28px;
+
+      border: 2px solid #d7b56d;
+
+      border-radius: 6px;
+
+      background: #7c0d0d;
+
+      color: #ffffff;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 1rem;
+
+      font-weight: bold;
+
+      text-decoration: none;
+
+      transition: background 0.2s ease, transform 0.2s ease;
+
+    }
+
+    .return-button:hover {
+
+      background: #a41717;
+
+      transform: translateY(-2px);
+
+    }
+
+    @media (max-width: 600px) {
+
+      .page {
+
+        padding: 25px 14px;
+
+      }
+
+      .hero {
+
+        padding: 45px 18px;
+
+      }
+
+      .story-section,
+
+      .closing {
+
+        padding: 32px 22px;
+
+      }
+
+      p {
+
+        font-size: 1.04rem;
+
+      }
+
+      .power-lines {
+
+        font-size: 1.12rem;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="container">
+
+      <header class="hero">
+
+        <h1>Vlad from Cellblock D</h1>
+
+        <p class="tagline">
+
+          Some cages were meant to hold monsters. Some create them.
+
+        </p>
+
+      </header>
+
+      <section class="story-section">
+
+        <h2>Transylvania — 1666</h2>
+
+        <p>
+
+          Vlad Dracula stands at the height of his power.
+
+        </p>
+
+        <p>
+
+          His army has crushed a consortium of his greatest enemies.
+
+          The battlefield surrounding Bran Castle is covered with the
+
+          bodies of the defeated, while Vlad’s victorious soldiers
+
+          chant his name.
+
+        </p>
+
+        <p>
+
+          Bran Castle is more than a fortress. It is the heart of
+
+          Vlad’s empire—protected by a loyal army, guarded by creatures
+
+          of the night, and thought to be impenetrable.
+
+        </p>
+
+        <div class="power-lines">
+
+          Vlad has never been more powerful.<br>
+
+          Never been more celebrated.<br>
+
+          Never been more secure.
+
+        </div>
+
+        <p>
+
+          After delivering his victory speech, Vlad steps safely inside
+
+          his castle and enters his private sanctuary.
+
+        </p>
+
+        <div class="turning-point">
+
+          Then something happens.
+
+        </div>
+
+      </section>
+
+      <section class="story-section">
+
+        <h2>Cellblock D — 2020</h2>
+
+        <p>
+
+          Vlad awakens face-down in a pool of his own blood.
+
+        </p>
+
+        <p>
+
+          Bran Castle is gone.<br>
+
+          His army is gone.
+
+        </p>
+
+        <p>
+
+          More than three centuries have passed—and one of history’s
+
+          most feared rulers is now weak, starving and trapped inside
+
+          Voiden-Gate, a modern maximum-security prison.
+
+        </p>
+
+        <p>
+
+          The inmates see an emaciated stranger.
+
+        </p>
+
+        <p>
+
+          The guards see another violent prisoner.
+
+        </p>
+
+        <p>
+
+          Neither realizes what has just awakened inside Cellblock D.
+
+        </p>
+
+        <p>
+
+          Stripped of his kingdom and nearly all his power, Vlad must
+
+          survive long enough to understand this unfamiliar world,
+
+          uncover what happened inside Bran Castle—and find his way home.
+
+        </p>
+
+        <p>
+
+          But first, he’ll have to survive his new cellmate.
+
+        </p>
+
+        <p class="big-ren">
+
+          His name is Big Ren.
+
+        </p>
+
+      </section>
+
+      <section class="closing">
+
+        <p>
+
+          <em>Vlad from Cellblock D</em> is an offbeat collision of
+
+          supernatural action, brutal horror, prison drama and dark
+
+          comedy—a Dracula story unlike any told before. One of
+
+          history’s most notorious figures has conquered armies,
+
+          inspired legends and terrified the world.
+
+        </p>
+
+        <p class="final-line">
+
+          Now, he has to survive Cellblock D.
+
+        </p>
+
+      </section>
+
+      <a class="return-button" href="index.html">
+
+        Return to Robot Afro Press
+
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
