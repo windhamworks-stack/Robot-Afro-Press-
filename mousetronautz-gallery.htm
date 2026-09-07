@@ -1,1 +1,215 @@
+ <!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mousetronautz Gallery | Robot Afro Press</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      background:
+
+        radial-gradient(circle at top, #24344d 0%, #101827 35%, #05070c 75%);
+
+      color: #ffffff;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      text-align: center;
+
+    }
+
+    .gallery-page {
+
+      width: 100%;
+
+      max-width: 1100px;
+
+      min-height: 100vh;
+
+      margin: 0 auto;
+
+      padding: 50px 20px;
+
+    }
+
+    h1 {
+
+      margin: 0 0 15px;
+
+      color: #f3c84b;
+
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      text-shadow: 3px 3px 0 #913327;
+
+    }
+
+    .gallery-intro {
+
+      margin: 0 auto 40px;
+
+      color: #ffffff;
+
+      font-size: 1.2rem;
+
+      font-style: italic;
+
+    }
+
+    .gallery-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 30px;
+
+      align-items: start;
+
+      margin-bottom: 50px;
+
+    }
+
+    .gallery-item {
+
+      width: 100%;
+
+      max-width: 400px;
+
+      margin: 0 auto;
+
+      padding: 15px;
+
+      border: 2px solid #f3c84b;
+
+      border-radius: 12px;
+
+      background: rgba(0, 0, 0, 0.78);
+
+      box-shadow: 0 0 25px rgba(80, 150, 255, 0.3);
+
+    }
+
+    .gallery-item img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 350px;
+
+      height: auto;
+
+      margin: 0 auto;
+
+      border-radius: 8px;
+
+    }
+
+    .gallery-caption {
+
+      margin: 14px 0 2px;
+
+      color: #ffffff;
+
+      font-size: 1rem;
+
+    }
+
+    .return-button {
+
+      display: inline-block;
+
+      margin-top: 20px;
+
+      padding: 15px 28px;
+
+      border: 2px solid #f3c84b;
+
+      border-radius: 6px;
+
+      background: #913327;
+
+      color: #ffffff;
+
+      font-weight: bold;
+
+      text-decoration: none;
+
+    }
+
+    .return-button:hover {
+
+      background: #b84a39;
+
+    }
+
+    @media (max-width: 600px) {
+
+      .gallery-page {
+
+        padding: 35px 15px;
+
+      }
+
+      .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="gallery-page">
+
+    <h1>Mousetronautz Gallery</h1>
+
+    <p class="gallery-intro">
+
+      Original artwork and concept development from Mousetronautz.
+
+    </p>
+
+    <section class="gallery-grid">
+
+      <!-- We will place each approved gallery image here. -->
+
+    </section>
+
+    <a class="return-button" href="mousetronautz.html">
+
+      ← Return to Mousetronautz
+
+    </a>
+
+  </main>
+
+</body>
+
+</html>
