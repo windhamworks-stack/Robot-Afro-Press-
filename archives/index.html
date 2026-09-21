@@ -1,1 +1,571 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The RAP Archives | Robot Afro Press</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      background: #111;
+
+      color: #fff;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      text-align: center;
+
+      line-height: 1.6;
+
+    }
+
+    header {
+
+      padding: 30px 20px 15px;
+
+    }
+
+    .logo {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 220px;
+
+      height: auto;
+
+      margin: 0 auto 25px;
+
+    }
+
+    h1 {
+
+      margin: 0 0 10px;
+
+      color: #ffd700;
+
+      font-size: clamp(2.3rem, 7vw, 4rem);
+
+      letter-spacing: 2px;
+
+    }
+
+    .archive-tagline {
+
+      margin: 0;
+
+      color: #fff;
+
+      font-size: 1.3rem;
+
+      font-weight: bold;
+
+    }
+
+    main {
+
+      width: 100%;
+
+      max-width: 1050px;
+
+      margin: auto;
+
+      padding: 20px;
+
+    }
+
+    .introduction {
+
+      max-width: 800px;
+
+      margin: 10px auto 45px;
+
+      color: #ddd;
+
+      font-size: 1.1rem;
+
+    }
+
+    .introduction strong {
+
+      display: block;
+
+      margin-bottom: 15px;
+
+      color: #ffd700;
+
+      font-size: 1.25rem;
+
+    }
+
+    .archive-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 25px;
+
+      align-items: stretch;
+
+    }
+
+    .archive-card {
+
+      padding: 25px 20px;
+
+      background: #181818;
+
+      border: 1px solid #ffd700;
+
+      border-radius: 8px;
+
+    }
+
+    .archive-card h2 {
+
+      margin-top: 0;
+
+      margin-bottom: 15px;
+
+      color: #ffd700;
+
+      font-size: 1.6rem;
+
+    }
+
+    .category-description {
+
+      min-height: 85px;
+
+      margin-bottom: 20px;
+
+      color: #ccc;
+
+    }
+
+    .opening-files {
+
+      margin: 0 0 12px;
+
+      color: #fff;
+
+      font-size: 1.05rem;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+    }
+
+    .entry-list {
+
+      margin: 0;
+
+      padding: 0;
+
+      list-style: none;
+
+    }
+
+    .entry-list li {
+
+      margin: 12px 0;
+
+      padding: 12px;
+
+      background: #222;
+
+      border-left: 3px solid #ffd700;
+
+      font-size: 1.05rem;
+
+      font-weight: bold;
+
+    }
+
+    .entry-detail {
+
+      display: block;
+
+      margin-top: 3px;
+
+      color: #bbb;
+
+      font-size: 0.9rem;
+
+      font-weight: normal;
+
+    }
+
+    .closing-message {
+
+      max-width: 800px;
+
+      margin: 55px auto 35px;
+
+      padding: 30px 20px;
+
+      border-top: 1px solid #ffd700;
+
+      border-bottom: 1px solid #ffd700;
+
+    }
+
+    .closing-message h2 {
+
+      margin-top: 0;
+
+      color: #ffd700;
+
+      font-size: 1.7rem;
+
+    }
+
+    .return-button {
+
+      display: inline-block;
+
+      margin: 5px auto 30px;
+
+      padding: 13px 25px;
+
+      background: #111;
+
+      color: #fff;
+
+      text-decoration: none;
+
+      border: 1px solid #ffd700;
+
+      border-radius: 6px;
+
+      font-weight: bold;
+
+    }
+
+    .return-button:hover,
+
+    .return-button:focus {
+
+      background: #ffd700;
+
+      color: #111;
+
+    }
+
+    footer {
+
+      margin-top: 30px;
+
+      padding: 25px 20px;
+
+      border-top: 1px solid #ffd700;
+
+      color: #ffd700;
+
+      font-size: 0.9rem;
+
+      line-height: 1.6;
+
+    }
+
+    footer a {
+
+      color: #ffd700;
+
+      text-decoration: underline;
+
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+
+        padding-top: 25px;
+
+      }
+
+      main {
+
+        padding: 15px;
+
+      }
+
+      .archive-card {
+
+        padding: 22px 16px;
+
+      }
+
+      .category-description {
+
+        min-height: 0;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <a href="../">
+
+      <img src="../RAP logo.jpg" alt="Robot Afro Press logo" class="logo">
+
+    </a>
+
+    <h1>THE RAP ARCHIVES</h1>
+
+    <p class="archive-tagline">
+
+      Every hero leaves a record. Every villain leaves a warning.
+
+    </p>
+
+  </header>
+
+  <main>
+
+    <section class="introduction">
+
+      <strong>The stories are only the beginning.</strong>
+
+      <p>
+
+        The RAP Archives opens the files on the heroes, villains, powerful
+
+        artifacts, advanced technology, and secret organizations shaping the
+
+        Robot Afro Press universe.
+
+      </p>
+
+      <p>
+
+        Some histories are known. Others remain classified.
+
+      </p>
+
+    </section>
+
+    <section class="archive-grid">
+
+      <article class="archive-card">
+
+        <h2>HEROES</h2>
+
+        <p class="category-description">
+
+          Meet the extraordinary people who defend the world, reshape it, and
+
+          sometimes challenge what it means to be a hero.
+
+        </p>
+
+        <h3 class="opening-files">Opening Files</h3>
+
+        <ul class="entry-list">
+
+          <li>Joan Henry</li>
+
+          <li>Harlem Knight</li>
+
+        </ul>
+
+      </article>
+
+      <article class="archive-card">
+
+        <h2>VILLAINS</h2>
+
+        <p class="category-description">
+
+          Explore the dangerous individuals and powerful forces threatening
+
+          the Robot Afro Press universe.
+
+        </p>
+
+        <h3 class="opening-files">Opening Files</h3>
+
+        <ul class="entry-list">
+
+          <li>Synergy</li>
+
+          <li>King Feratu</li>
+
+        </ul>
+
+      </article>
+
+      <article class="archive-card">
+
+        <h2>WEAPONS, TECHNOLOGY &amp; ARTIFACTS</h2>
+
+        <p class="category-description">
+
+          Discover the legendary weapons, mysterious objects, and advanced
+
+          technology capable of changing the balance of power.
+
+        </p>
+
+        <h3 class="opening-files">Opening Files</h3>
+
+        <ul class="entry-list">
+
+          <li>
+
+            The MIC
+
+            <span class="entry-detail">Power conduit of MC2 One</span>
+
+          </li>
+
+          <li>
+
+            Driver — The Hammer of Ogun
+
+            <span class="entry-detail">Primary weapon of Joan Henry</span>
+
+          </li>
+
+          <li>
+
+            The Staff of Moses
+
+            <span class="entry-detail">Carried by Tubman</span>
+
+          </li>
+
+          <li>
+
+            The Reparator
+
+            <span class="entry-detail">Signature weapon of Superbad</span>
+
+          </li>
+
+          <li>
+
+            The Rail Splitter
+
+            <span class="entry-detail">Signature weapon of Buffalo Warrior</span>
+
+          </li>
+
+        </ul>
+
+      </article>
+
+      <article class="archive-card">
+
+        <h2>ORGANIZATIONS &amp; FACTIONS</h2>
+
+        <p class="category-description">
+
+          Enter the hidden world of government divisions, secret societies,
+
+          powerful alliances, and organizations operating beyond the public eye.
+
+        </p>
+
+        <h3 class="opening-files">Opening Files</h3>
+
+        <ul class="entry-list">
+
+          <li>1331</li>
+
+          <li>M.O.D.U.</li>
+
+        </ul>
+
+      </article>
+
+    </section>
+
+    <section class="closing-message">
+
+      <h2>THE ARCHIVES ARE ONLY BEGINNING TO OPEN.</h2>
+
+      <p>
+
+        New heroes, villains, weapons, artifacts, and classified organizations
+
+        will be revealed as the Robot Afro Press universe expands.
+
+      </p>
+
+      <p><strong>Return to discover which file opens next.</strong></p>
+
+    </section>
+
+    <a href="../" class="return-button">RETURN TO ROBOT AFRO PRESS</a>
+
+  </main>
+
+  <footer>
+
+    <p>
+
+      © 2026 Robot Afro Press. All rights reserved. All stories, character
+
+      designs, artwork, written descriptions, logos, and other original content
+
+      displayed on this website are owned by Robot Afro Press or their
+
+      respective rights holders. No content may be copied, reproduced,
+
+      modified, redistributed, republished, or used to create derivative works
+
+      without prior express written authorization, except where permitted by law.
+
+    </p>
+
+    <p>
+
+      <a href="../terms.html">Terms of Use</a>
+
+    </p>
+
+  </footer>
+
+  <!-- Cloudflare Web Analytics -->
+
+  <script
+
+    type="module"
+
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+
+    data-cf-beacon='{"token":"73d00b36bea64d4890be975a9d6288f6"}'>
+
+  </script>
+
+  <!-- End Cloudflare Web Analytics -->
+
+</body>
+
+</html>
